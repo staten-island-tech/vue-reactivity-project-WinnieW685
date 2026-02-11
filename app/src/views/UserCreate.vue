@@ -15,7 +15,7 @@
 <script setup>
 //add new ref for logged in: Boolean. New function to update that value
 import { reactive, ref } from 'vue' //more complex data structure to save as an object
-const user = reactive([{ username: '', password: '' }])
+const user = reactive({ username: '', password: '' })
 const loggedin = ref(false)
 function login(user) {
   console.log(user)
