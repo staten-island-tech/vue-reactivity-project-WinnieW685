@@ -1,15 +1,14 @@
 <template>
   <div>
-    <h2>{{ meal.title }}</h2>
-    \
-    <h3>{{ meal.ingredients }}</h3>
-    <h3>{{ meal.steps }}</h3>
+    <h2>{{ plant.title }}</h2>
+    <img src="" alt="" />
+    <button>BUY please :></button>
   </div>
 </template>
 
 <script setup>
 defineProps({
-  meal: {
+  plant: {
     type: Object,
     required: true,
   },
