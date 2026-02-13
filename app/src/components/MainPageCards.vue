@@ -1,18 +1,22 @@
 <template>
-  <div>
+  <div class="card">
     <h2>{{ plant.title }}</h2>
-    <img src="" alt="" />
-    <button>BUY please :></button>
+    <h3>{{ plant.price }}</h3>
+    <img :src="plant.image" alt="" />
+    <button @click="shopping">BUY please :></button>
   </div>
 </template>
 
 <script setup>
+import { reactive, ref } from 'vue'
 defineProps({
   plant: {
     type: Object,
     required: true,
   },
 })
+
+function shopping() {}
 </script>
 
 <style scoped>
