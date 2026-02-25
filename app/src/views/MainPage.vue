@@ -1,4 +1,5 @@
 <template>
+  <h1>Buy CHEAP flowers lolol</h1>
   <div class="container">
     <MainPageCards v-for="plant in plants" :key="plant.title" :plant="plant">{{
       plant.title
@@ -17,21 +18,21 @@ const plants = ref([
   { title: 'Dahlia', picture: '', price: 99.99 },
   { title: 'Anemone', picture: '', price: 19.99 },
   { title: 'Amaranth', picture: '', price: 20.49 },
-  { title: 'Chrysanthemum', picture: '', price: 64.6 },
+  { title: 'Chrysanthemum', picture: '', price: 67.69 },
   { title: 'Larkspur', picture: '', price: 20.99 },
   { title: 'Gladiolus', picture: '', price: 41.99 },
   { title: 'Sunflower', picture: '', price: 59.49 },
   { title: 'Gerbera Daisy', picture: '', price: 30.99 },
-  { title: 'Snapdragon', picture: '', price: 78.9 },
+  { title: 'Snapdragon', picture: '', price: 78.99 },
   { title: 'Bells of Ireland', picture: '', price: 0.99 },
   { title: 'Strawflower', picture: '', price: 67.99 },
-  { title: 'Morning Glory', picture: '', price: 30.0 },
+  { title: 'Morning Glory', picture: '', price: 30.99 },
   { title: 'Lobelia', picture: '', price: 24.99 },
   { title: 'Verbena', picture: '', price: 16.49 },
   { title: 'Dust miller', picture: '', price: 79.99 },
   { title: 'Sweet Alyssum', picture: '', price: 11.99 },
   { title: 'Gazania', picture: '', price: 3.99 },
-  { title: 'Spider Lily', picture: '', price: 12.0 },
+  { title: 'Spider Lily', picture: '', price: 12.05 },
 ])
 </script>
 
