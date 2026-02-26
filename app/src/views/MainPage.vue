@@ -1,7 +1,7 @@
 <template>
   <h1>Buy CHEAP flowers lolol</h1>
   <div class="container">
-    <MainPageCards v-for="plant in plants" :key="plant.title" :plant="plant">{{
+    <MainPageCards show-card='' v-for="plant in plants" :key="plant.title" :plant="plant">{{
       plant.title
     }}</MainPageCards>
   </div>
@@ -34,6 +34,9 @@ const plants = ref([
   { title: 'Gazania', picture: '', price: 3.99 },
   { title: 'Spider Lily', picture: '', price: 12.05 },
 ])
+function showCard() {
+  
+}
 </script>
 
 <style scoped>

@@ -14,8 +14,10 @@ defineProps({
     required: true,
   },
 })
-
-function shopping() {}
+const emits = defineEmits(['showCard'])
+function shopping() {
+  emits('showCard')
+}
 </script>
 
 <style scoped>
