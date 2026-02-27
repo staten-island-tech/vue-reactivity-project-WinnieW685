@@ -3,7 +3,7 @@
     <h2>{{ plant.title }}</h2>
     <h3>{{ plant.price }}</h3>
     <img :src="plant.image" alt="" />
-    <button @click="shopping">BUY please :></button>
+    <slot></slot>
   </div>
 </template>
 

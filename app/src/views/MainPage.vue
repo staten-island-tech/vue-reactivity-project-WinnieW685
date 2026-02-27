@@ -1,14 +1,17 @@
 <template>
   <h1>Buy CHEAP flowers lolol</h1>
   <div class="container">
-    <MainPageCards show-card='' v-for="plant in plants" :key="plant.title" :plant="plant">{{
-      plant.title
-    }}</MainPageCards>
+    <MainPageCards show-card="" v-for="plant in plants" :key="plant.title" :plant="plant">
+      <button @click="addToCart(plant)">buy</button></MainPageCards
+    >
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+function addToCart(plant) {
+  console.log(plant)
+}
 import MainPageCards from '@/components/MainPageCards.vue'
 const plants = ref([
   { title: 'Cosmos', picture: '', price: 41.99 },
@@ -34,9 +37,6 @@ const plants = ref([
   { title: 'Gazania', picture: '', price: 3.99 },
   { title: 'Spider Lily', picture: '', price: 12.05 },
 ])
-function showCard() {
-  
-}
 </script>
 
 <style scoped>
