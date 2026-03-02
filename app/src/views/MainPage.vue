@@ -8,9 +8,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
+const bought = ref([])
 function addToCart(plant) {
-  console.log(plant)
+  bought.push(`${plant.title}--${plant.price}`)
+  console.log(boughtPlants)
+  console.log(`${plant.title}--${plant.price}`)
 }
 import MainPageCards from '@/components/MainPageCards.vue'
 const plants = ref([
