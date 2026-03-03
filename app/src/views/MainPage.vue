@@ -5,17 +5,18 @@
       <button @click="addToCart(plant)">buy</button></MainPageCards
     >
   </div>
+  <MainPageCart v-for="plant in boughts" :key="bought" :p></MainPageCart>
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue'
-const bought = ref([])
+const boughts = ref([])
 function addToCart(plant) {
-  bought.push(`${plant.title}--${plant.price}`)
-  console.log(boughtPlants)
-  console.log(`${plant.title}--${plant.price}`)
+  boughts.value.push(plant)
+  console.log(`${plant.title}--$${plant.price}`)
 }
 import MainPageCards from '@/components/MainPageCards.vue'
+import MainPageCart from '@/components/MainPageCart.vue'
 const plants = ref([
   { title: 'Cosmos', picture: '', price: 41.99 },
   { title: 'Indian Paintbrush', picture: '', price: 29.99 },

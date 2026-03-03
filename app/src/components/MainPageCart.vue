@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h2>{{ plant.name }}</h2>
-    <h2>{{ plant.price }}</h2>
+    <h2>{{ bought }}</h2>
     <button @click="removePlant">Delete</button>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  bought: {
+    type: Object,
+    required: true,
+  },
+})
+</script>
 
 <style scoped></style>
