@@ -5,7 +5,7 @@
       <button @click="addToCart(plant)">buy</button></MainPageCards
     >
   </div>
-  <MainPageCart v-for="plant in boughts" :key="bought" :p></MainPageCart>
+  <MainPageCart v-for="plant in boughts" :key="plant" :plant="plant"  @delete=""></MainPageCart>
 </template>
 
 <script setup>
