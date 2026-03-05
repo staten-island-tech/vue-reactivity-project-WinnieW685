@@ -2,7 +2,7 @@
   <div>
     <h2>{{ plant.title }}</h2>
     <h2>{{ plant.price }}</h2>
-    <button @click="$emit('delete')">Delete</button>
+    <button @click="$emit('remove')">Delete</button>
   </div>
 </template>
 
@@ -14,9 +14,10 @@ defineProps({
     required: true,
   },
 })
-defineEmits(['delete'])
-
-function removePlant(index) {}
+defineEmits(['remove'])
+function removePlant(plant) {
+  boughts.value = boughts.value.filter((t) => t !== plant)
+}
 </script>
 
 <style scoped></style>
