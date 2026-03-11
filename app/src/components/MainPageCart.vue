@@ -20,4 +20,15 @@ function removePlant(plant) {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+button {
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+div {
+  border-radius: 2px;
+  border-color: gray;
+}
+</style>
